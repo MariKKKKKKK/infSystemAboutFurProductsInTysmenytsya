@@ -3,7 +3,7 @@
  */
 $(document).ready(function () {
 
-    function close_accordion_section() {
+    function closeAccordionSection() {
         $(' .js-show-menu').removeClass('active');
         $('.nav__list').slideUp(300).removeClass('open');
     }
@@ -13,9 +13,9 @@ $(document).ready(function () {
 
 
         if ($(e.target).is('.active')) {
-            close_accordion_section();
+            closeAccordionSection();
         } else {
-            close_accordion_section();
+            closeAccordionSection();
 
             // Add active class to section title
             $(this).addClass('active');
@@ -26,9 +26,9 @@ $(document).ready(function () {
         e.preventDefault();
 
     });
+    $( window ).resize(function() {
 
+        $(".nav__list").css("display", "flex");
+    });
 });
-$( window ).resize(function() {
 
-    $(".nav__list").css("display", "flex");
-});

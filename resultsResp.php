@@ -25,8 +25,8 @@ include("functions/functions.php");
     <header class="header">
         <div class="header__icon js-show-menu"> &#9776;</div>
         <form class="form" method="get" action="resultsResp.php" enctype="multipart/form-data">
-            <input class="form__input" type="text" name="user_query" placeholder="Шукати товар"/ >
-            <input class="form__submit" type="submit" name="search" value="Шукати"/>
+            <input class="form__input" type="text" name="user_query" placeholder="Шукати товар" >
+            <input class="form__submit" type="submit" name="search" value="Шукати">
         </form>
     </header>
 
@@ -56,7 +56,7 @@ include("functions/functions.php");
                     Види хутра
                 </button>
                 <ul class="fur__list nav__list">
-                    <?php getCats(); ?>
+                    <?php getListOfFur(); ?>
                 </ul>
             </section>
 
@@ -65,7 +65,7 @@ include("functions/functions.php");
                     Бренди
                 </button>
                 <ul class="brands__list nav__list">
-                    <?php getBrands(); ?>
+                    <?php getListOfBrands(); ?>
                 </ul>
             </section>
 
@@ -75,18 +75,16 @@ include("functions/functions.php");
                 </button>
 
                 <ul class="nav__list shops__list">
-                    <?php getShops(); ?>
+                    <?php getListOfShops(); ?>
                 </ul>
             </section>
         </nav>
 
     </aside>
 
-    <div class="content">
+   
         <div class="product-area">
 
-
-            <div class="product-area__box">
                 <?php
 
                 if(isset($_GET['search'])){
@@ -106,25 +104,19 @@ include("functions/functions.php");
                         $pro_price = $row_pro['product_price'];
                         $pro_image = $row_pro['product_image'];
 
-                        echo "
-			
-            
-         	<div class='product-column'>
-                        <div class='product-img'>
-                            <img src='admin_area/product_images/$pro_image'  />
-                        </div>
-                     <div class='product-text'>
-                            <p class='product-text__price'> Ціна: $ $pro_price </p>
-                 
-                             <a class='product-text__detail' href='details.php?pro_id=$pro_id' >
-                       
-                                   Деталі
-                            </a>
-                            
-                        
-                      </div>
-                    </div>
-            ";
+                        echo "            
+                            <div class='product-column'>
+                                <div class='product-img-div'>
+                                    <img src='admin_area/product_images/$pro_image'>
+                                </div>
+                                <div class='product-text'>
+                                    <p class='product-text__price'> Ціна: $ $pro_price </p>
+                                    <a class='product-text__detail' href='details.php?pro_id=$pro_id'>
+                                        Деталі
+                                    </a>
+                                 </div>
+                            </div>
+                         ";
 
                     }
                     if (!isset($_GET['user_query'])) {
@@ -132,15 +124,11 @@ include("functions/functions.php");
                     }
                 }
                 ?>
-
             </div>
 
         </div>
     </div>
-    <!--Content wrapper ends-->
-
-
-
+   
     <footer class="footer">
         <p class="footer__par">
             <a href="#" class="footer__link">

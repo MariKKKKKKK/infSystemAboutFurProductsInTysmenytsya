@@ -12,21 +12,18 @@ include("functions/functions.php");
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/prodR.css">
-
 
 </head>
 
 <body>
 
-
-<div class="fluid-container">
+<div class="container-fluid">
     <header class="header">
         <div class="header__icon js-show-menu"> &#9776;</div>
         <form class="form" method="get" action="resultsResp.php" enctype="multipart/form-data">
-            <input class="form__input" type="text" name="user_query" placeholder="Шукати товар"/ >
-            <input class="form__submit" type="submit" name="search" value="Шукати"/>
+            <input class="form__input" type="text" name="user_query" placeholder="Шукати товар" >
+            <input class="form__submit" type="submit" name="search" value="Шукати">
         </form>
     </header>
 
@@ -43,7 +40,7 @@ include("functions/functions.php");
                     <li class="main-menu__item nav__item"><a class="main-menu__link nav__link"
                                                              href="index.html">Головна</a>
                     </li>
-                    <li class="main-menu__item nav__item"><a class=" main-menu__link nav__link"
+                    <li class="main-menu__item nav__item"><a class="main-menu__link nav__link"
                                                              href="productResp.php">Товари</a></li>
                     <li class="main-menu__item nav__item"><a class="main-menu__link nav__link"
                                                              href="contact.html">Контакти</a>
@@ -56,7 +53,7 @@ include("functions/functions.php");
                     Види хутра
                 </button>
                 <ul class="fur__list nav__list">
-                    <?php getCats(); ?>
+                    <?php getListOfFur(); ?>
                 </ul>
             </section>
 
@@ -65,7 +62,7 @@ include("functions/functions.php");
                     Бренди
                 </button>
                 <ul class="brands__list nav__list">
-                    <?php getBrands(); ?>
+                    <?php getListOfBrands(); ?>
                 </ul>
             </section>
 
@@ -75,31 +72,21 @@ include("functions/functions.php");
                 </button>
 
                 <ul class="nav__list shops__list">
-                    <?php getShops(); ?>
+                    <?php getListOfShops(); ?>
                 </ul>
             </section>
         </nav>
 
     </aside>
 
-    <div class="content">
-
-        <div class="product-area">
-
-            <div class="product-area__box">
-                <?php
-                getAllProducts();
-                getCatPro();
-                getBrandPro();
-                getShopsPro();
-                ?>
-
-            </div>
-
-        </div>
+    <div class="product-area">
+        <?php
+            getAllProducts();
+            filterProductsByFur();
+            filterProductsByBrand();
+            filterProductsByShop();
+        ?>
     </div>
-
-
 
     <footer class="footer">
         <p class="footer__par">
@@ -108,9 +95,9 @@ include("functions/functions.php");
             </a>
          </p>
     </footer>
-
-
+    
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="js/products.js"></script>

@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(".nav").css("width", 0);
     }
 
-    function close_accordion_section() {
+    function closeAccordionSection() {
         $('.nav__section .js-accordion-btn').removeClass('active');
         $('.nav__section .nav__list').slideUp(300).removeClass('open');
     }
@@ -21,11 +21,10 @@ $(document).ready(function () {
 
     $('.js-accordion-btn').click(function (e) {
 
-
         if ($(e.target).is('.active')) {
-            close_accordion_section();
+            closeAccordionSection();
         } else {
-            close_accordion_section();
+            closeAccordionSection();
 
             // Add active class to section title
             $(this).addClass('active');

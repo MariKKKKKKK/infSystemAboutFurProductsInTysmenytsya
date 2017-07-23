@@ -7,11 +7,10 @@
     <title>My Online Shop</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/contacts.css" media="all" />
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
 
 <body>
-
 
     <div class="container-fluid">
         <header class="header">
@@ -24,11 +23,11 @@
                 </ul>
             </nav>
         </header>
+        <main>
 
-        <div class="content">
-            <div class="contact">
+            <section class="contact">
 
-                <h1 class="contact__heading">Контакти</h1>
+                <h1 class="contact__h1">Контакти</h1>
 
                 <div class="email">
                     <div class="email__col-1">
@@ -40,7 +39,6 @@
                         <p class="email__p"><span class="email__underline">office@hutro.com </span> - відділ співробітництва та гуртових замовлень
                         </p>
                     </div>
-
                 </div>
                 <div class="tel">
                     <div class="tel__col-1">
@@ -60,12 +58,13 @@
                     </div>
                 </div>
 
+            </section>
+
+
+            <div id="map">
+
             </div>
-
-        </div>
-        <div id="map">
-
-        </div>
+        </main>
         <footer class="footer">
             <p class="footer__par">
                 <a href="#" class="footer__link">
@@ -73,7 +72,6 @@
                 </a>
             </p>
         </footer>
-
 
     </div>
 
@@ -85,21 +83,11 @@
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 48.897768, lng: 24.848896 },
                 zoom: 16
-
-
-            });
-
-
-
-            marker.addListener('click', function () {
-                infowindow.open(map, marker);
             });
 
         }
-
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGNXgt9Zpseu1hyZvTw4rixzkuzJvO8Us&v=3&callback=initMap">
-
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

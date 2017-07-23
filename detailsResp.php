@@ -9,13 +9,13 @@ include("functions/functions.php");
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/detailsResp.css" media="all"/>
+    <link rel="stylesheet" href="css/detailsResp.css" >
 
 </head>
 
 <body>
 
-<div class="fluid-container">
+<div class="container-fluid">
     <header class="header">
         <div class="header__icon js-show-menu"> &#9776;</div>
         <form class="form" method="get" action="resultsResp.php" enctype="multipart/form-data">
@@ -50,7 +50,7 @@ include("functions/functions.php");
                     Види хутра
                 </button>
                 <ul class="fur__list nav__list">
-                    <?php getCats(); ?>
+                    <?php getListOfFur(); ?>
                 </ul>
             </section>
 
@@ -59,7 +59,7 @@ include("functions/functions.php");
                     Бренди
                 </button>
                 <ul class="brands__list nav__list">
-                    <?php getBrands(); ?>
+                    <?php getListOfBrands(); ?>
                 </ul>
             </section>
 
@@ -69,15 +69,12 @@ include("functions/functions.php");
                 </button>
 
                 <ul class="nav__list shops__list">
-                    <?php getShops(); ?>
+                    <?php getListOfShops(); ?>
                 </ul>
             </section>
         </nav>
 
     </aside>
-
-    <div class="content">
-
 
         <div class="product">
             <?php
@@ -98,37 +95,26 @@ include("functions/functions.php");
                     $pro_desc = $row_pro['product_desc'];
 
                     echo "
-				<div class='product-area'>
-				
-				<div class='product__img-div'>
-					<img class='product__img' src='admin_area/product_bg_images/$pro_image'  />
-				</div>
-				<div class='product__text'>
-					<h1 class='product__heading'>$pro_title</h1>
-					
-					<p class='product__price'>Ціна: $ $pro_price</p>
-					
-					<p class='product__desc'>$pro_desc </p>
-					
-					<a class='product__link' href='productResp.php' >
-					    <div class='product__btn'>Назад</div>
-					</a>
-					
-				</div>
-				
-				</div>
-		
-		
-		";
+			
+                        <div class='product__div-img'>
+                            <img class='product__img' src='admin_area/product_bg_images/$pro_image'  />
+                        </div>
+
+                        <div class='product__text'>
+                            <h1 class='product__heading'>$pro_title</h1>
+                            <p class='product__price'>Ціна: $ $pro_price</p>
+                            <p class='product__desc'>$pro_desc </p>
+                            <a class='product__link' href='productResp.php' >
+                                <div class='product__btn'>Назад</div>
+                            </a>
+                        </div>
+	        	    ";
 
                 }
             }
             ?>
 
         </div>
-
-    </div>
-
 
    <footer class="footer">
         <p class="footer__par">
@@ -137,7 +123,6 @@ include("functions/functions.php");
             </a>
          </p>
     </footer>
-
 
 </div>
 
