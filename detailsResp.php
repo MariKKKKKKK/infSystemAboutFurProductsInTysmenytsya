@@ -1,12 +1,7 @@
 <!DOCTYPE>
 <?php
-session_start();
 include("functions/functions.php");
 ?>
-<?php
-header('Content-type: text/html; charset = utf-8')
-?>
-
 
 <html>
 <head>
