@@ -1,0 +1,112 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Online Shop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contacts.css" media="all" />
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <header class="header">
+            <div class="header__icon js-show-menu"> &#9776;</div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
+                    <li class="nav__item"><a class="nav__link" href="productResp.php">Товари</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="contact">
+
+                <h1 class="contact__heading">Контакти</h1>
+
+                <div class="email">
+                    <div class="email__col-1">
+                        Email:
+                    </div>
+                    <div class="email__col-2">
+                        <p class="email__p"><span class="email__underline">market@hutro.com</span> - відділ продаж та замовлень
+                        </p>
+                        <p class="email__p"><span class="email__underline">office@hutro.com </span> - відділ співробітництва та гуртових замовлень
+                        </p>
+                    </div>
+
+                </div>
+                <div class="tel">
+                    <div class="tel__col-1">
+                        Телефон:
+                    </div>
+                    <div class="tel__col-2">
+                        <p class="tel__p">+38 067 105 11 99 з 9-00 до 20-00</p>
+                        <p class="tel__p">+38 050 655 42 22</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="address__col-1">
+                        Центр хутра
+                    </div>
+                    <div class="address__col-2">
+                        Івано-Франківська область, м.Тисмениця
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="map">
+
+        </div>
+        <footer class="footer">
+            <p class="footer__par">
+                <a href="#" class="footer__link">
+                    Ссилка на github репозиторій проекту
+                </a>
+            </p>
+        </footer>
+
+
+    </div>
+
+    <script>
+        var map;
+
+        function initMap() {
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 48.897768, lng: 24.848896 },
+                zoom: 16
+
+
+            });
+
+
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGNXgt9Zpseu1hyZvTw4rixzkuzJvO8Us&v=3&callback=initMap">
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/contact.js">
+
+    </script>
+</body>
+
+</html>

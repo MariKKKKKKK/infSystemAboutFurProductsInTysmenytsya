@@ -1,0 +1,147 @@
+
+
+.header {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+
+
+  &__menu {
+
+    @media screen and (max-width: 650px) {
+      display: inline-block;
+      background-color: #8a6d3b;
+      position: absolute;
+      right: 0;
+      padding: 1em;
+      z-index: 10;
+    }
+
+  }
+  &__menu svg {
+    width: 32px;
+    fill: gold;
+  }
+
+
+}
+
+.nav {
+
+
+  border-bottom: 4px solid gold;
+  width: 100%;
+  background-color: #8a6d3b;
+  @media(max-width: 650px) {
+    height: auto;
+    border: none;
+  }
+  .border {
+    border-bottom: 4px solid gold!important;
+  }
+  &__list  {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 800px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+
+
+    }
+
+
+  }
+  &__item {
+    padding: 1.2em;
+    list-style-type: none;
+    @media screen and (max-width: 650px) {
+
+     display: none;
+
+    }
+
+  }
+  &__link {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      color: goldenrod;
+      text-decoration: none;
+
+    }
+  }
+}
+
+
+.presentation {
+
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+
+  &__heading-1 {
+    width: 100%;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  &__heading-2 {
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+
+  &__row {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  &__img-b {
+    text-align: center;
+    width: 100%;
+  }
+  &__img {
+    width: 511px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__text {
+    width: 100%;
+
+
+
+  }
+  &__par {
+    text-indent: 1em;
+    text-align: justify;
+    font-size: 3em;
+
+  }
+
+}
+
+.footer {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #8a6d3b;
+  border-top: 4px solid gold;
+  &__copyright {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+}

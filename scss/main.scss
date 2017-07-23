@@ -1,0 +1,77 @@
+@import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+.header {
+  @include make-row();
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav {
+  background-color: #8a6d3b;
+  border-bottom: 4px solid gold;
+  @include make-md-column(12);
+  &__list {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__item {
+    padding: 1.2em;
+    list-style-type: none;
+
+  }
+  &__link {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      color: goldenrod;
+      text-decoration: none;
+
+    }
+  }
+}
+
+
+.presentation {
+  @include make-row();
+  margin-left: 0;
+  margin-right: 0;
+  &__heading-1 {
+    @include make-md-column(12);
+    text-align: center;
+  }
+  &__images {
+    @include make-md-column(12);
+    display: flex;
+    justify-content: space-around;
+  }
+  &__heading-2 {
+    @include make-md-column(12);
+    text-align: center;
+  }
+  &__text {
+    @include make-md-column-offset(1);
+    @include make-md-column(10);
+    @include make-md-column-offset(1);
+    .presentation__par {
+      @include make-md-column(4);
+      text-align: justify;
+    }
+  }
+}
+
+.footer {
+  @include make-row();
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #8a6d3b;
+  border-top: 4px solid gold;
+  &__copyright {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+}
