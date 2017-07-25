@@ -1157,8 +1157,493 @@ hr {
     color: goldenrod;
     text-decoration: none; }
 
-#map {
+.contact {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .contact:before, .contact:after {
+    content: " ";
+    display: table; }
+  .contact:after {
+    clear: both; }
+  .contact__h1 {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .contact__h1 {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .contact__h1 {
+        float: left;
+        width: 100%; } }
+    @media screen and (max-width: 410px) and (min-width: 311px) {
+      .contact__h1 {
+        font-size: 2em; } }
+    @media screen and (max-width: 510px) and (min-width: 411px) {
+      .contact__h1 {
+        font-size: 2.125em; } }
+    @media screen and (max-width: 610px) and (min-width: 511px) {
+      .contact__h1 {
+        font-size: 2.25em; } }
+    @media screen and (max-width: 710px) and (min-width: 611px) {
+      .contact__h1 {
+        font-size: 2.375em; } }
+    @media screen and (max-width: 810px) and (min-width: 711px) {
+      .contact__h1 {
+        font-size: 2.5em; } }
+    @media screen and (max-width: 910px) and (min-width: 811px) {
+      .contact__h1 {
+        font-size: 2.625em; } }
+    @media screen and (max-width: 1010px) and (min-width: 911px) {
+      .contact__h1 {
+        font-size: 2.75em; } }
+    @media screen and (max-width: 1110px) and (min-width: 1011px) {
+      .contact__h1 {
+        font-size: 2.875em; } }
+    @media screen and (max-width: 1210px) and (min-width: 1111px) {
+      .contact__h1 {
+        font-size: 3em; } }
+    @media screen and (max-width: 1310px) and (min-width: 1211px) {
+      .contact__h1 {
+        font-size: 3.125em; } }
+    @media screen and (max-width: 1410px) and (min-width: 1311px) {
+      .contact__h1 {
+        font-size: 3.25em; } }
+    @media screen and (max-width: 1510px) and (min-width: 1411px) {
+      .contact__h1 {
+        font-size: 3.375em; } }
+    @media screen and (max-width: 1610px) and (min-width: 1511px) {
+      .contact__h1 {
+        font-size: 3.5em; } }
+    @media screen and (max-width: 1710px) and (min-width: 1611px) {
+      .contact__h1 {
+        font-size: 3.625em; } }
+    @media screen and (max-width: 1810px) and (min-width: 1711px) {
+      .contact__h1 {
+        font-size: 3.75em; } }
+    @media screen and (max-width: 1910px) and (min-width: 1811px) {
+      .contact__h1 {
+        font-size: 3.875em; } }
+    @media screen and (max-width: 2010px) and (min-width: 1911px) {
+      .contact__h1 {
+        font-size: 4em; } }
+    @media screen and (max-width: 2110px) and (min-width: 2011px) {
+      .contact__h1 {
+        font-size: 4.125em; } }
+    @media screen and (max-width: 2210px) and (min-width: 2111px) {
+      .contact__h1 {
+        font-size: 4.25em; } }
+
+.email {
+  position: relative;
+  float: left;
   width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .email {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .email {
+      float: left;
+      width: 100%; } }
+  @media screen and (max-width: 410px) and (min-width: 311px) {
+    .email {
+      font-size: 0.9375em; } }
+  @media screen and (max-width: 510px) and (min-width: 411px) {
+    .email {
+      font-size: 1.0625em; } }
+  @media screen and (max-width: 610px) and (min-width: 511px) {
+    .email {
+      font-size: 1.1875em; } }
+  @media screen and (max-width: 710px) and (min-width: 611px) {
+    .email {
+      font-size: 1.3125em; } }
+  @media screen and (max-width: 810px) and (min-width: 711px) {
+    .email {
+      font-size: 1.4375em; } }
+  @media screen and (max-width: 910px) and (min-width: 811px) {
+    .email {
+      font-size: 1.5625em; } }
+  @media screen and (max-width: 1010px) and (min-width: 911px) {
+    .email {
+      font-size: 1.6875em; } }
+  @media screen and (max-width: 1110px) and (min-width: 1011px) {
+    .email {
+      font-size: 1.8125em; } }
+  @media screen and (max-width: 1210px) and (min-width: 1111px) {
+    .email {
+      font-size: 1.9375em; } }
+  @media screen and (max-width: 1310px) and (min-width: 1211px) {
+    .email {
+      font-size: 2.0625em; } }
+  @media screen and (max-width: 1410px) and (min-width: 1311px) {
+    .email {
+      font-size: 2.1875em; } }
+  @media screen and (max-width: 1510px) and (min-width: 1411px) {
+    .email {
+      font-size: 2.3125em; } }
+  @media screen and (max-width: 1610px) and (min-width: 1511px) {
+    .email {
+      font-size: 2.4375em; } }
+  @media screen and (max-width: 1710px) and (min-width: 1611px) {
+    .email {
+      font-size: 2.5625em; } }
+  @media screen and (max-width: 1810px) and (min-width: 1711px) {
+    .email {
+      font-size: 2.6875em; } }
+  @media screen and (max-width: 1910px) and (min-width: 1811px) {
+    .email {
+      font-size: 2.8125em; } }
+  @media screen and (max-width: 2010px) and (min-width: 1911px) {
+    .email {
+      font-size: 2.9375em; } }
+  @media screen and (max-width: 2110px) and (min-width: 2011px) {
+    .email {
+      font-size: 3.0625em; } }
+  @media screen and (max-width: 2210px) and (min-width: 2111px) {
+    .email {
+      font-size: 3.1875em; } }
+  .email__col-1 {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .email__col-1 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .email__col-1 {
+        float: left;
+        width: 50%; } }
+  .email__col-2 {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .email__col-2 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .email__col-2 {
+        float: left;
+        width: 50%; } }
+  .email__p {
+    padding: 0;
+    margin: 0; }
+
+.tel {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .tel {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .tel {
+      float: left;
+      width: 100%; } }
+  @media screen and (max-width: 410px) and (min-width: 311px) {
+    .tel {
+      font-size: 0.9375em; } }
+  @media screen and (max-width: 510px) and (min-width: 411px) {
+    .tel {
+      font-size: 1.0625em; } }
+  @media screen and (max-width: 610px) and (min-width: 511px) {
+    .tel {
+      font-size: 1.1875em; } }
+  @media screen and (max-width: 710px) and (min-width: 611px) {
+    .tel {
+      font-size: 1.3125em; } }
+  @media screen and (max-width: 810px) and (min-width: 711px) {
+    .tel {
+      font-size: 1.4375em; } }
+  @media screen and (max-width: 910px) and (min-width: 811px) {
+    .tel {
+      font-size: 1.5625em; } }
+  @media screen and (max-width: 1010px) and (min-width: 911px) {
+    .tel {
+      font-size: 1.6875em; } }
+  @media screen and (max-width: 1110px) and (min-width: 1011px) {
+    .tel {
+      font-size: 1.8125em; } }
+  @media screen and (max-width: 1210px) and (min-width: 1111px) {
+    .tel {
+      font-size: 1.9375em; } }
+  @media screen and (max-width: 1310px) and (min-width: 1211px) {
+    .tel {
+      font-size: 2.0625em; } }
+  @media screen and (max-width: 1410px) and (min-width: 1311px) {
+    .tel {
+      font-size: 2.1875em; } }
+  @media screen and (max-width: 1510px) and (min-width: 1411px) {
+    .tel {
+      font-size: 2.3125em; } }
+  @media screen and (max-width: 1610px) and (min-width: 1511px) {
+    .tel {
+      font-size: 2.4375em; } }
+  @media screen and (max-width: 1710px) and (min-width: 1611px) {
+    .tel {
+      font-size: 2.5625em; } }
+  @media screen and (max-width: 1810px) and (min-width: 1711px) {
+    .tel {
+      font-size: 2.6875em; } }
+  @media screen and (max-width: 1910px) and (min-width: 1811px) {
+    .tel {
+      font-size: 2.8125em; } }
+  @media screen and (max-width: 2010px) and (min-width: 1911px) {
+    .tel {
+      font-size: 2.9375em; } }
+  @media screen and (max-width: 2110px) and (min-width: 2011px) {
+    .tel {
+      font-size: 3.0625em; } }
+  @media screen and (max-width: 2210px) and (min-width: 2111px) {
+    .tel {
+      font-size: 3.1875em; } }
+  .tel__col-1 {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .tel__col-1 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .tel__col-1 {
+        float: left;
+        width: 50%; } }
+  .tel__col-2 {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .tel__col-2 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .tel__col-2 {
+        float: left;
+        width: 50%; } }
+  .tel__p {
+    padding: 0;
+    margin: 0; }
+
+.address {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .address {
+      float: left;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .address {
+      float: left;
+      width: 100%; } }
+  @media screen and (max-width: 410px) and (min-width: 311px) {
+    .address {
+      font-size: 0.9375em; } }
+  @media screen and (max-width: 510px) and (min-width: 411px) {
+    .address {
+      font-size: 1.0625em; } }
+  @media screen and (max-width: 610px) and (min-width: 511px) {
+    .address {
+      font-size: 1.1875em; } }
+  @media screen and (max-width: 710px) and (min-width: 611px) {
+    .address {
+      font-size: 1.3125em; } }
+  @media screen and (max-width: 810px) and (min-width: 711px) {
+    .address {
+      font-size: 1.4375em; } }
+  @media screen and (max-width: 910px) and (min-width: 811px) {
+    .address {
+      font-size: 1.5625em; } }
+  @media screen and (max-width: 1010px) and (min-width: 911px) {
+    .address {
+      font-size: 1.6875em; } }
+  @media screen and (max-width: 1110px) and (min-width: 1011px) {
+    .address {
+      font-size: 1.8125em; } }
+  @media screen and (max-width: 1210px) and (min-width: 1111px) {
+    .address {
+      font-size: 1.9375em; } }
+  @media screen and (max-width: 1310px) and (min-width: 1211px) {
+    .address {
+      font-size: 2.0625em; } }
+  @media screen and (max-width: 1410px) and (min-width: 1311px) {
+    .address {
+      font-size: 2.1875em; } }
+  @media screen and (max-width: 1510px) and (min-width: 1411px) {
+    .address {
+      font-size: 2.3125em; } }
+  @media screen and (max-width: 1610px) and (min-width: 1511px) {
+    .address {
+      font-size: 2.4375em; } }
+  @media screen and (max-width: 1710px) and (min-width: 1611px) {
+    .address {
+      font-size: 2.5625em; } }
+  @media screen and (max-width: 1810px) and (min-width: 1711px) {
+    .address {
+      font-size: 2.6875em; } }
+  @media screen and (max-width: 1910px) and (min-width: 1811px) {
+    .address {
+      font-size: 2.8125em; } }
+  @media screen and (max-width: 2010px) and (min-width: 1911px) {
+    .address {
+      font-size: 2.9375em; } }
+  @media screen and (max-width: 2110px) and (min-width: 2011px) {
+    .address {
+      font-size: 3.0625em; } }
+  @media screen and (max-width: 2210px) and (min-width: 2111px) {
+    .address {
+      font-size: 3.1875em; } }
+  .address__col-1 {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .address__col-1 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .address__col-1 {
+        float: left;
+        width: 50%; } }
+  .address__col-2 {
+    position: relative;
+    float: left;
+    width: 66.66667%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .address__col-2 {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .address__col-2 {
+        float: left;
+        width: 50%; } }
+  .address__p {
+    padding: 0;
+    margin: 0; }
+
+#map {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
   height: 500px; }
 
 .footer {

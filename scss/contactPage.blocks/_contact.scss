@@ -1,0 +1,10 @@
+.contact {
+  @include make-row();
+  &__h1 {
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(12);
+    text-align: center;
+    @include changeFontSizeWithMedia();
+  }
+}
