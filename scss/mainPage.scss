@@ -1,5 +1,3 @@
-
-
 // Core variables and mixins
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -12,7 +10,13 @@
 // Utility classes
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+//my mixins 
+@import "mixins/mixins";
+//blocks
+@import "mainPage.blocks/header";
+@import "mainPage.blocks/nav";
+@import "mainPage.blocks/presentation";
+@import "mainPage.blocks/footer";
 
-.presentation {
-    color: black;
-}
+
+

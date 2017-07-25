@@ -1,0 +1,55 @@
+
+
+
+.form {
+    @include make-md-column(7);
+    @include make-sm-column(7);
+    @include make-xs-column(9);
+    @include make-md-column-offset(1);
+    @include make-sm-column-offset(1);
+    @include make-xs-column-offset(1);
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    &__input {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 8px;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 1.5em;
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        @media screen and (max-width: 649px) and (min-width: 320px) {
+            font-size: 1em;
+        }
+        @media screen and (max-width: 999px) and (min-width: 650px) {
+            font-size: 1em;
+        }
+        @media screen and (max-width: 1200px) and (min-width: 1000px) {
+            font-size: 1.3em;
+        }
+        &:focus {
+            border: 4px solid goldenrod;
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            color: goldenrod;
+            font-weight: bold;
+        }
+    }
+    &__submit {
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 8px;
+        color: goldenrod;
+        font-weight: bold;
+        width: 90px;
+        border: 4px solid goldenrod;
+        background-color: white;
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+}

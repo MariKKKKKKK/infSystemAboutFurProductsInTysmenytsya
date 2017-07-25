@@ -1059,3 +1059,132 @@ hr {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+/**
+  *Description: converts pixels to em's. Pixels should be defined without px ending.
+  *@function 
+  *@param {px} pixels
+  *@param {px} context -  default font-size on page
+ */
+/**
+  *Description: changes font-size by 0.3em every 100px starting from 310px width up to 1310px  
+  *@mixin 
+  *@param {px} min-width - Min-width of media query 
+  *@param {px} max-width - Max-width of media query
+  *@param {px} font-size - font-size which is converted to em's
+ */
+.header {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: 4px solid gold;
+  background-color: #8a6d3b; }
+  .header:before, .header:after {
+    content: " ";
+    display: table; }
+  .header:after {
+    clear: both; }
+
+.nav__list {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 5px; }
+  @media (min-width: 768px) {
+    .nav__list {
+      float: left;
+      width: 66.66667%; } }
+  @media (min-width: 992px) {
+    .nav__list {
+      float: left;
+      width: 50%; } }
+
+.nav__item {
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 1.2em;
+  list-style-type: none; }
+  @media (min-width: 768px) {
+    .nav__item {
+      float: left;
+      width: 33.33333%; } }
+  @media (min-width: 992px) {
+    .nav__item {
+      float: left;
+      width: 33.33333%; } }
+
+.nav__link {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none; }
+  @media screen and (max-width: 480px) and (min-width: 400px) {
+    .nav__link {
+      font-size: 1.5em; } }
+  @media screen and (max-width: 399px) and (min-width: 319px) {
+    .nav__link {
+      font-size: 1.2em; } }
+  .nav__link:active {
+    color: goldenrod;
+    text-decoration: none; }
+  .nav__link:visited {
+    color: white;
+    text-decoration: none; }
+  .nav__link:hover {
+    color: goldenrod;
+    text-decoration: none; }
+
+#map {
+  width: 100%;
+  height: 500px; }
+
+.footer {
+  margin-top: 10px;
+  background-color: #8a6d3b;
+  border-top: 4px solid gold;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .footer:before, .footer:after {
+    content: " ";
+    display: table; }
+  .footer:after {
+    clear: both; }
+  .footer__p {
+    text-align: center; }
+  .footer__link {
+    color: white;
+    font-size: 2.3em; }
+    .footer__link:hover {
+      color: white; }
+    @media screen and (max-width: 649px) and (min-width: 320px) {
+      .footer__link {
+        font-size: 1em; } }
+    @media screen and (max-width: 999px) and (min-width: 650px) {
+      .footer__link {
+        font-size: 1.4em; } }
+    @media screen and (max-width: 1200px) and (min-width: 1000px) {
+      .footer__link {
+        font-size: 2em; } }

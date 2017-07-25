@@ -7,14 +7,13 @@
     <title>My Online Shop</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contactPage.css">
 </head>
 
 <body>
 
     <div class="container-fluid">
         <header class="header">
-            <div class="header__icon js-show-menu"> &#9776;</div>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
@@ -66,7 +65,7 @@
             </div>
         </main>
         <footer class="footer">
-            <p class="footer__par">
+            <p class="footer__p">
                 <a href="#" class="footer__link">
                     Ссилка на github репозиторій проекту
                 </a>
@@ -74,7 +73,6 @@
         </footer>
 
     </div>
-
     <script>
         var map;
 
@@ -83,11 +81,21 @@
             map = new google.maps.Map(document.getElementById('map'), {
                 center: { lat: 48.897768, lng: 24.848896 },
                 zoom: 16
+
+
+            });
+
+
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
             });
 
         }
+
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGNXgt9Zpseu1hyZvTw4rixzkuzJvO8Us&v=3&callback=initMap">
+
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

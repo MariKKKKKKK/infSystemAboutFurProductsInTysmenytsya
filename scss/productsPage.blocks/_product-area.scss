@@ -1,0 +1,7 @@
+
+.product-area {
+    width: 100%;
+    background-color: white;
+    @include make-row();
+    margin: 0;
+}

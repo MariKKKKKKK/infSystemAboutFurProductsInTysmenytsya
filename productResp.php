@@ -89,7 +89,7 @@ include("functions/functions.php");
     </div>
 
     <footer class="footer">
-        <p class="footer__par">
+        <p class="footer__p">
             <a href="#" class="footer__link">
                     Посилання на github репозиторій проекту
             </a>

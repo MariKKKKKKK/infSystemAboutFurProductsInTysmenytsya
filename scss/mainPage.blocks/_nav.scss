@@ -1,0 +1,40 @@
+.nav {
+    &__list {
+        @include make-xs-column(12);
+        @include make-sm-column(8);
+        @include make-md-column(6);
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    &__item {
+        @include make-xs-column(4);
+        @include make-sm-column(4);
+        @include make-md-column(4);
+        padding: 1.2em;
+        list-style-type: none;
+    }
+    &__link {
+        @media screen and (max-width: 480px) and (min-width: 400px) {
+            font-size: 1.5em;
+        }
+        @media screen and (max-width: 399px) and (min-width: 319px) {
+            font-size: 1.2em;
+        }
+        font-size: 2em;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        &:active {
+            color: goldenrod;
+            text-decoration: none;
+        }
+        &:visited {
+            color: white;
+            text-decoration: none;
+        }
+        &:hover {
+            color: goldenrod;
+            text-decoration: none;
+        }
+    }
+}

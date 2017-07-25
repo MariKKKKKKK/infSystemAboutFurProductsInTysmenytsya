@@ -13,7 +13,7 @@ include("functions/functions.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/prodR.css">
+    <link rel="stylesheet" href="css/productsPage.css">
 
 
 </head>
@@ -21,7 +21,7 @@ include("functions/functions.php");
 <body>
 
 
-<div class="fluid-container">
+<div class="container-fluid">
     <header class="header">
         <div class="header__icon js-show-menu"> &#9776;</div>
         <form class="form" method="get" action="resultsResp.php" enctype="multipart/form-data">
@@ -125,22 +125,16 @@ include("functions/functions.php");
                 }
                 ?>
             </div>
-
         </div>
     </div>
    
-    <footer class="footer">
-        <p class="footer__par">
+   <footer class="footer">
+        <p class="footer__p">
             <a href="#" class="footer__link">
                     Посилання на github репозиторій проекту
             </a>
          </p>
     </footer>
-
-
-
-
-
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
