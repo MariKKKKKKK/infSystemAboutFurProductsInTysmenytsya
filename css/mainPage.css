@@ -1067,7 +1067,7 @@ hr {
   *@param {px} context -  default font-size on page
  */
 /**
-  *Description: changes font-size by 0.3em every 100px starting from 310px width up to 1310px  
+  *Description: changes font-size by 0.3em every 100px starting from 310px width up to 2100px  
   *@mixin 
   *@param {px} min-width - Min-width of media query 
   *@param {px} max-width - Max-width of media query
@@ -1251,24 +1251,24 @@ hr {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     float: left;
     width: 100%;
     min-height: 1px;
     padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
     padding-right: 15px; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .presentation__h2 {
         float: left;
         width: 100%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .presentation__h2 {
         float: left;
         width: 100%; } }

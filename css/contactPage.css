@@ -1067,7 +1067,7 @@ hr {
   *@param {px} context -  default font-size on page
  */
 /**
-  *Description: changes font-size by 0.3em every 100px starting from 310px width up to 1310px  
+  *Description: changes font-size by 0.3em every 100px starting from 310px width up to 2100px  
   *@mixin 
   *@param {px} min-width - Min-width of media query 
   *@param {px} max-width - Max-width of media query

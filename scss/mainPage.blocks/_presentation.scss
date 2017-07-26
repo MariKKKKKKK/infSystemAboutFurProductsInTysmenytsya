@@ -11,9 +11,11 @@
     &__h2 {
         text-align: center;
         margin-bottom: 20px;
-        @include make-md-column(12);
-        @include make-sm-column(12);
         @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(12);
+        
+       
         @include changeFontSizeWithMedia(210px, 320px, 23);
     }
     &__row {

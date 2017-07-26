@@ -9,7 +9,7 @@ include("functions/functions.php");
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/detailsResp.css" >
+    <link rel="stylesheet" href="css/detailsPage.css" >
 
 </head>
 
@@ -97,14 +97,14 @@ include("functions/functions.php");
                     echo "
 			
                         <div class='product__div-img'>
-                            <img class='product__img' src='admin_area/product_bg_images/$pro_image'  />
+                            <img class='product__img' src='admin_area/product_bg_images/$pro_image'>
                         </div>
 
                         <div class='product__text'>
-                            <h1 class='product__heading'>$pro_title</h1>
+                            <h1 class='product__h1'>$pro_title</h1>
                             <p class='product__price'>Ціна: $ $pro_price</p>
                             <p class='product__desc'>$pro_desc </p>
-                            <a class='product__link' href='productResp.php' >
+                            <a class='product__link' href='productResp.php'>
                                 <div class='product__btn'>Назад</div>
                             </a>
                         </div>

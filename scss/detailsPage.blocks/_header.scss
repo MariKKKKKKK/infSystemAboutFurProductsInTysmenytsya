@@ -1,0 +1,18 @@
+
+
+
+.header {
+    background-color: #8a6d3b;
+    @include make-row();
+    &__icon {
+        @include make-md-column(2);
+        @include make-sm-column(2);
+        @include make-xs-column(2);
+        cursor: pointer;
+        width: 50px;
+        color: gold;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 3em;
+    }
+}
